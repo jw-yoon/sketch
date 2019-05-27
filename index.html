@@ -7,8 +7,11 @@
 	.back{width:1200px ; height:17647; margin: auto; background: 000033;}
 	section{; position: relative;
 		}
-		.mooon{position: absolute; animation: ro infinite 15s alternate cubic-bezier(.30,.35,.70,1.01); display: block;}
-		
+		.mooon{width:80%; position: absolute; animation: ro 10s infinite alternate linear; display: block;}
+		@keyframes ro{
+		from{}
+		to{transform: rotate3d(0,0,1,5deg);}
+		}
 		.one{ position: absolute; animation: lim infinite 10s alternate cubic-bezier(.30,.35,.70,1.01); display: block; }
 	@keyframes lim{
 		from{}
